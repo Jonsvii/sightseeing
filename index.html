@@ -1,51 +1,69 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>City tours in Tallinn & day tours in Estonia</title>
-  <link rel="stylesheet" href="tyyli.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tallinn Sightseeing Tours</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="overlay">
-    <h1>City tours in Tallinn & day tours in Estonia</h1>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Tallinn Sightseeing</h1>
+      <nav>
+        <ul>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <p class="intro">
-      We offer unforgettable travel experiences in Tallinn and other wonderful places in Estonia.
-      Don’t miss your chance — book your spot on our next tour!
-    </p>
+  <section class="hero">
+    <div class="container">
+      <h2>City Tours in Tallinn & Day Tours in Estonia</h2>
+      <p>We offer unforgettable travel experiences in Tallinn and other wonderful places in Estonia. Don’t miss your chance — book your spot on our next tour!</p>
+      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn-primary">📩 Book Now</a>
+    </div>
+  </section>
 
-    <h2>🌅 Early Bird City Tours in Tallinn</h2>
-    <ul>
-      <li>🕢 7:30 AM — Duration: 2 hours</li>
-      <li>🕗 8:00 AM — Duration: 1.5 hours</li>
-      <li>🕣 8:30 AM — Duration: 1 hour</li>
-    </ul>
+  <section class="section light-bg" id="tours">
+    <div class="container">
+      <h2>🌅 Early Bird City Tours in Tallinn</h2>
+      <ul class="tour-list">
+        <li>🕢 7:30 AM — Duration: 2 hours</li>
+        <li>🕗 8:00 AM — Duration: 1.5 hours</li>
+        <li>🕣 8:30 AM — Duration: 1 hour</li>
+      </ul>
+    </div>
+  </section>
 
-    <h2>🌟 About Us</h2>
-    <p>
-      Our guides have years of experience in tour guiding and travel organizing. 
-    </p>
-    <p>
-      We offer guided tours in:
-    </p>
-    <ul class="languages">
-      <li><img src="https://flagcdn.com/gb.svg" alt="UK flag" class="flag"> English</li>
-      <li><img src="https://flagcdn.com/se.svg" alt="Swedish flag" class="flag"> Swedish</li>
-      <li><img src="https://flagcdn.com/no.svg" alt="Norwegian flag" class="flag"> Norwegian</li>
-    </ul>
+  <section class="section" id="about">
+    <div class="container">
+      <h2>🌟 About Us</h2>
+      <p>Our guides have years of experience in tour guiding and travel organizing.</p>
+      <p>We offer guided tours in following languages:</p>
+      <ul class="languages">
+        <li><img src="https://flagcdn.com/gb.svg" alt="UK flag" class="flag" /> English</li>
+        <li><img src="https://flagcdn.com/se.svg" alt="Swedish flag" class="flag" /> Swedish</li>
+        <li><img src="https://flagcdn.com/no.svg" alt="Norwegian flag" class="flag" /> Norwegian</li>
+      </ul>
+    </div>
+  </section>
 
-    <h2>📞 Contact Us</h2>
-    <p>Email: <a href="info@tallinnsightseeing.com">info@tallinnsightseeing.com</a></p>
-    <p>Phone: +372 56467229</p>
+  <section class="section light-bg" id="contact">
+    <div class="container">
+      <h2>📞 Contact Us</h2>
+      <p>Email: <a href="mailto:info@tallinnsightseeing.com">info@tallinnsightseeing.com</a></p>
+      <p>Phone: +372 56467229</p>
+      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn-primary">📩 Book Now</a>
+    </div>
+  </section>
 
-    <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="button">
-      📩 Book Now
-    </a>
-
-    <footer>
-      <p>&copy; 2025 Sightseeing Ltd. | Evelin Kass</p>
-    </footer>
-  </div>
+  <footer class="footer">
+    <p>&copy; 2025 Sightseeing Ltd. </p>
+  </footer>
 </body>
 </html>
