@@ -1,111 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tallinn Sightseeing Tours</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <!-- Perinteinen favicon -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIININVEST</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-<!-- PNG-versio (moni selain) -->
-<link rel="icon" href="/favicon.png" type="image/png" />
+    body, html {
+      height: 100%;
+    }
 
-<!-- Apple Touch Icon (iOS kotinäytölle) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    body {
+      background: url('pic6.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+    }
 
-<!-- Android Manifest (valinnainen) -->
-<link rel="manifest" href="/site.webmanifest" />
+    /* Yläpalkki */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      font-weight: bold;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
 
-<!-- Microsoft tile (Windows 8/10) -->
-<meta name="msapplication-TileColor" content="#ffffff" />
-<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    header .contacts a {
+      color: white;
+      text-decoration: none;
+    }
 
-<!-- Theme color (Chrome Mobile) -->
-<meta name="theme-color" content="#d6336c" />
-  <link rel="stylesheet" href="tyyli.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    .stock-widget {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Hero-osio */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+      margin-top: 70px; /* tilaa headerille */
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+
+    .hero .contact-btn {
+      background-color: #444; /* tumman hohtava väri */
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .hero .contact-btn:hover {
+      background-color: #222;
+    }
+
+    /* Alapalkki / lomake */
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
+      color: white;
+    }
+
+    footer h4 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    footer form input,
+    footer form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.9rem;
+      background-color: rgba(50,50,50,0.7); /* läpinäkyvä tumma */
+      color: white;
+    }
+
+    footer form input::placeholder,
+    footer form textarea::placeholder {
+      color: #ccc;
+    }
+
+    footer form button {
+      background-color: #444; /* tumman hohtava väri */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    footer form button:hover {
+      background-color: #222;
+    }
+
+    @media(max-width: 600px){
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .hero .contact-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">Tallinn Sightseeing</div>
-      <nav class="main-nav">
-        <a href="#tours">Tours</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+  <header>
+    <div class="logo">VIININVEST</div>
+    <div class="contacts">
+      <a href="mailto:viitanen@viininvest.com">Connect</a>
+    </div>
+    <div class="stock-widget">
+      <!-- TradingView Widget -->
+      <div class="tradingview-widget-container" style="height:30px;">
+        <div id="tradingview_f0a1b"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            "container_id": "tradingview_f0a1b",
+            "width": 300,
+            "height": 30,
+            "symbol": "NASDAQOMX:OMXTGI",
+            "interval": "D",
+            "timezone": "Europe/Tallinn",
+            "theme": "dark",
+            "style": "1",
+            "locale": "fi",
+            "toolbar_bg": "#1e1e1e",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "hide_legend": true
+          });
+        </script>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>City Tours in Tallinn & Day Tours in Estonia</h1>
-      <p>We offer unforgettable travel experiences in Tallinn and other wonderful places in Estonia. Don’t miss your chance — book your spot on our next tour!</p>
-      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn">📩 Book Now</a>
-    </div>
-  </section>
+  <div class="hero">
+    <h1>VIININVEST</h1>
+    <p>Building Tomorrows Wealth</p>
+    <a href="mailto:viitanen@viininvest.com" class="contact-btn">Contact Us</a>
+  </div>
 
-  <section class="tours section light-bg" id="tours">
-    <div class="container">
-      <h2>🌅 Early Bird City Tours in Tallinn</h2>
-      <div class="tour-cards">
-        <div class="card">
-          <p>🕧 7:30 AM — Duration: 2 hours</p>
-        </div>
-        <div class="card">
-          <p>🕐 8:00 AM — Duration: 1.5 hours</p>
-        </div>
-        <div class="card">
-          <p>🕣 8:30 AM — Duration: 1 hour</p>
-        </div>
-      </div>
-    </div>
-    <p class="tour-description">
-      Would you like to explore Tallinn before the tourist crowds and busy streets take over?<br>
-      Perhaps you’re in town for business and have a free morning to enjoy the sights.<br>
-      Our Early Bird Tours could be the perfect way to start your day!
-    </p>
-  </section>
-
-  <section class="section light-bg" id="private-tours">
-    <div class="container">
-      <h2>🗺️ Tailor Made Private Tours</h2>
-      <p class="tour-description">
-        We can arrange a custom private day tour anywhere in Estonia based on your wishes. Whether you're planning a special occasion or simply want a more personal experience, we’re here to make it happen.
-      </p>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="container">
-      <h2>🌟 About Us</h2>
-      <p>Our guides have years of experience in tour guiding and travel organizing.</p>
-      <p>We offer guided tours in following languages:</p>
-      <ul class="languages">
-        <li><img src="https://flagcdn.com/gb.svg" alt="UK flag" class="flag" /> English</li>
-        <li><img src="https://flagcdn.com/se.svg" alt="Swedish flag" class="flag" /> Swedish</li>
-        <li><img src="https://flagcdn.com/no.svg" alt="Norwegian flag" class="flag" /> Norwegian</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section light-bg" id="contact">
-    <div class="container">
-      <h2>📞 Contact Us</h2>
-      <p>Email: <a href="mailto:info@tallinnsightseeing.com">info@tallinnsightseeing.com</a></p>
-      <p>Phone: +372 56467229</p>
-      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn">📩 Book Now</a>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Sightseeing Ltd.</p>
+  <footer>
+    <div>
+      <h4>Send a quick message</h4>
+      <form action="mailto:viitanen@viininvest.com" method="get" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" />
+        <input type="email" name="email" placeholder="Your email" />
+        <textarea name="message" rows="3" placeholder="Message"></textarea>
+        <button type="submit">Send Email</button>
+      </form>
     </div>
   </footer>
+
 </body>
 </html>
