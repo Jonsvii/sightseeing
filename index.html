@@ -4,30 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tallinn Sightseeing Tours</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.png" type="image/png">
-  <!-- Perinteinen favicon -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#d6336c" />
 
-<!-- PNG-versio (moni selain) -->
-<link rel="icon" href="/favicon.png" type="image/png" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-<!-- Apple Touch Icon (iOS kotinäytölle) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-<!-- Android Manifest (valinnainen) -->
-<link rel="manifest" href="/site.webmanifest" />
-
-<!-- Microsoft tile (Windows 8/10) -->
-<meta name="msapplication-TileColor" content="#ffffff" />
-<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
-
-<!-- Theme color (Chrome Mobile) -->
-<meta name="theme-color" content="#d6336c" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -43,48 +32,48 @@
 
   <section class="hero">
     <div class="container">
-      <h1>City Tours in Tallinn & Day Tours in Estonia</h1>
-      <p>We offer unforgettable travel experiences in Tallinn and other wonderful places in Estonia. Don’t miss your chance — book your spot on our next tour!</p>
-      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn">📩 Book Now</a>
+      <h1>City Tours in Tallinn & Day Trips Across Estonia</h1>
+      <p>Experience Tallinn with our professional local guides. Discover history, culture and charm with every step.</p>
+      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn">Book Now</a>
     </div>
   </section>
 
-  <section class="tours section light-bg" id="tours">
+  <section class="section light-bg" id="tours">
     <div class="container">
-      <h2>🌅 Early Bird City Tours in Tallinn</h2>
+      <h2><i data-lucide="sunrise"></i> Early Bird City Tours</h2>
       <div class="tour-cards">
         <div class="card">
-          <p>🕧 7:30 AM — Duration: 2 hours</p>
+          <i data-lucide="clock"></i>
+          <p>7:30 AM — Duration: 2 hours</p>
         </div>
         <div class="card">
-          <p>🕐 8:00 AM — Duration: 1.5 hours</p>
+          <i data-lucide="clock"></i>
+          <p>8:00 AM — Duration: 1.5 hours</p>
         </div>
         <div class="card">
-          <p>🕣 8:30 AM — Duration: 1 hour</p>
+          <i data-lucide="clock"></i>
+          <p>8:30 AM — Duration: 1 hour</p>
         </div>
       </div>
-    </div>
-    <p class="tour-description">
-      Would you like to explore Tallinn before the tourist crowds and busy streets take over?<br>
-      Perhaps you’re in town for business and have a free morning to enjoy the sights.<br>
-      Our Early Bird Tours could be the perfect way to start your day!
-    </p>
-  </section>
-
-  <section class="section light-bg" id="private-tours">
-    <div class="container">
-      <h2>🗺️ Tailor Made Private Tours</h2>
       <p class="tour-description">
-        We can arrange a custom private day tour anywhere in Estonia based on your wishes. Whether you're planning a special occasion or simply want a more personal experience, we’re here to make it happen.
+        See Tallinn before the crowds — quiet streets, golden morning light and a personal guide to show you hidden gems.
       </p>
     </div>
   </section>
 
-  <section class="section" id="about">
+  <section class="section" id="private-tours">
     <div class="container">
-      <h2>🌟 About Us</h2>
-      <p>Our guides have years of experience in tour guiding and travel organizing.</p>
-      <p>We offer guided tours in following languages:</p>
+      <h2><i data-lucide="map"></i> Tailor-Made Private Tours</h2>
+      <p class="tour-description">
+        Design your own experience anywhere in Estonia. Our private tours offer flexibility, comfort and a personal touch.
+      </p>
+    </div>
+  </section>
+
+  <section class="section light-bg" id="about">
+    <div class="container">
+      <h2><i data-lucide="info"></i> About Us</h2>
+      <p>We are a local team of experienced guides passionate about showing visitors the best of Tallinn and Estonia. Our tours combine history, culture and local stories.</p>
       <ul class="languages">
         <li><img src="https://flagcdn.com/gb.svg" alt="UK flag" class="flag" /> English</li>
         <li><img src="https://flagcdn.com/se.svg" alt="Swedish flag" class="flag" /> Swedish</li>
@@ -93,19 +82,23 @@
     </div>
   </section>
 
-  <section class="section light-bg" id="contact">
+  <section class="section" id="contact">
     <div class="container">
-      <h2>📞 Contact Us</h2>
+      <h2><i data-lucide="phone"></i> Contact Us</h2>
       <p>Email: <a href="mailto:info@tallinnsightseeing.com">info@tallinnsightseeing.com</a></p>
       <p>Phone: +372 56467229</p>
-      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn">📩 Book Now</a>
+      <a href="mailto:info@tallinnsightseeing.com?subject=Tour Booking" class="btn">Book a Tour</a>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Sightseeing Ltd.</p>
+      <p>&copy; 2025 Tallinn Sightseeing. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
