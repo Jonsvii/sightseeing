@@ -39,22 +39,26 @@
     .flag { width: 28px; height: 18px; margin-right: 6px; display:inline-block; vertical-align:middle; }
   </style>
 </head>
+
 <body class="font-body text-gray-800 antialiased">
 
-<!-- ===== Header / Navbar ===== -->
+<!-- ============================================== -->
+<!--                 HEADER / NAV BAR               -->
+<!-- ============================================== -->
+
 <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
-    
-    <!-- Larger logo + larger title -->
+
+    <!-- Logo + Title -->
     <div class="flex items-center gap-4">
       <img src="logo3.jpg.png" alt="Tallinn Sightseeing logo"
-          class="h-28 w-28 object-contain rounded-md" />
+           class="h-20 w-20 sm:h-24 sm:w-24 lg:h-28 lg:w-28 object-contain rounded-md" />
       <div class="text-3xl sm:text-4xl font-heading text-tsblue tracking-wide">
         Tallinn Sightseeing
       </div>
     </div>
 
-    <!-- Desktop navigation -->
+    <!-- Desktop nav -->
     <nav class="hidden md:flex space-x-8 text-base items-center font-medium">
       <a href="#home" class="hover:text-tsblue">Home</a>
       <a href="#tours" class="hover:text-tsblue">Tours</a>
@@ -79,22 +83,38 @@
     </button>
 
   </div>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu"
+       class="md:hidden hidden flex-col bg-white shadow-lg text-lg space-y-4 p-6">
+    <a href="#home">Home</a>
+    <a href="#tours">Tours</a>
+    <a href="#shop">Online Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="mailto:info@tallinnsightseeing.com"
+       class="bg-tsblue text-white px-4 py-2 rounded-md text-center">
+      Book Now
+    </a>
+  </nav>
 </header>
 
-<!-- ===== Hero ===== -->
+<!-- ============================================== -->
+<!--                     HERO                       -->
+<!-- ============================================== -->
+
 <section id="home" class="relative">
-  
-  <!-- Responsive + optimized hero image -->
+
+  <!-- Optimized hero image -->
   <img src="pic1.jpg"
        alt="Tallinn scenic view"
        class="w-full h-[75vh] object-cover"
        loading="eager"
-       sizes="100vw"
-  />
+       sizes="100vw" />
 
   <div class="absolute inset-0 hero-overlay flex flex-col justify-center items-center text-center p-6 sm:p-10 gap-6">
-    
-    <!-- Larger flags -->
+
+    <!-- Flags -->
     <ul class="flex gap-4 justify-center flex-wrap text-white text-lg">
       <li><img src="https://flagcdn.com/gb.svg" class="flag" /> English</li>
       <li><img src="https://flagcdn.com/se.svg" class="flag" /> Swedish</li>
@@ -104,16 +124,16 @@
       <li><img src="https://flagcdn.com/ee.svg" class="flag" /> Estonian</li>
     </ul>
 
-    <!-- Larger text -->
-    <h1 class="text-5xl sm:text-6xl font-heading text-white drop-shadow-lg">
+    <!-- Hero title -->
+    <h1 class="text-4xl sm:text-6xl font-heading text-white drop-shadow-lg">
       Discover Authentic Tallinn
     </h1>
 
-    <p class="mt-3 text-xl sm:text-2xl text-white/95 max-w-2xl">
+    <p class="mt-3 text-lg sm:text-2xl text-white/95 max-w-2xl">
       Explore the Baltics with expert guides — real culture, real nature, real experiences.
     </p>
 
-    <!-- Larger buttons -->
+    <!-- Buttons -->
     <div class="mt-4 flex justify-center gap-4">
       <a href="#tours"
          class="bg-white text-tsblue px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100">
@@ -126,17 +146,21 @@
       </a>
     </div>
 
-    <!-- Larger contact text -->
     <div class="mt-2 text-white text-lg">
       ✉️ info@tallinnsightseeing.com &nbsp; | &nbsp; ☎️ +372 5647229
     </div>
   </div>
 </section>
 
-<!-- ===== Tours Overview (overlay) ===== -->
+<!-- ============================================== -->
+<!--                   TOURS BOX                    -->
+<!-- ============================================== -->
+
 <section id="tours" class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 -mt-16 relative z-10">
-  <div class="bg-white rounded-xl shadow-lg p-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-    <!-- Early Morning -->
+  <div class="bg-white rounded-xl shadow-lg p-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Each card unchanged except mobile layout improved -->
+
     <article class="overflow-hidden rounded-lg text-center">
       <img src="pic1.jpg" alt="Early Morning" class="w-full h-44 object-cover" />
       <div class="p-4">
@@ -149,7 +173,6 @@
       </div>
     </article>
 
-    <!-- Classical -->
     <article class="overflow-hidden rounded-lg text-center">
       <img src="pic3.jpg" alt="Classical Tours" class="w-full h-44 object-cover" />
       <div class="p-4">
@@ -159,7 +182,6 @@
       </div>
     </article>
 
-    <!-- Theme -->
     <article class="overflow-hidden rounded-lg text-center">
       <img src="pic4.jpg" alt="Theme Tours" class="w-full h-44 object-cover" />
       <div class="p-4">
@@ -169,7 +191,6 @@
       </div>
     </article>
 
-    <!-- Special Interest -->
     <article class="overflow-hidden rounded-lg text-center">
       <img src="pic5.jpg" alt="Special Interest" class="w-full h-44 object-cover" />
       <div class="p-4">
@@ -179,7 +200,6 @@
       </div>
     </article>
 
-    <!-- Wellness SPA -->
     <article class="overflow-hidden rounded-lg text-center">
       <img src="pic2.jpg" alt="Wellness SPA" class="w-full h-44 object-cover" />
       <div class="p-4">
@@ -189,7 +209,6 @@
       </div>
     </article>
 
-        <!-- Tours in the Baltics -->
     <article class="overflow-hidden rounded-lg text-center">
       <img src="pic5.jpg" alt="Baltics" class="w-full h-44 object-cover" />
       <div class="p-4">
@@ -198,81 +217,87 @@
         <a class="inline-block mt-3 text-sm text-tsblue font-medium" href="baltics.html">Learn more →</a>
       </div>
     </article>
+
   </div>
 </section>
 
+<!-- ============================================== -->
+<!--                ONLINE SHOP                     -->
+<!-- ============================================== -->
 
-
-        <!-- Placeholder for spacing or future cards -->
-      </div>
-    </section>
-
-    <!-- ===== Online Shop Section ===== -->
-    <section id="shop" class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-10">
-      <div class="bg-white rounded-xl shadow-lg p-6">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <h2 class="text-2xl font-heading">Authentic Estonian Products</h2>
-            <p class="mt-2 text-gray-600">Bring a piece of Estonia home — handcrafted items, local food specialties, and curated souvenirs.</p>
-            <div class="mt-4 flex gap-3">
-              <!-- Replace the URL below with your actual Shopify store URL -->
-              <a href="https://your-shopify-store.myshopify.com" target="_blank" rel="noopener" class="inline-block bg-tsaccent text-white px-4 py-2 rounded-md font-medium">Visit Our Shopify Store</a>
-              <a href="mailto:info@tallinnsightseeing.com?subject=Shop%20Inquiry" class="inline-block border px-4 py-2 rounded-md">Contact about products</a>
-            </div>
-          </div>
-
-          <!-- Optional featured product previews -->
-          <div class="grid grid-cols-2 gap-4 w-full md:w-96">
-            <div class="border rounded p-2 text-center">
-              <img src="pic2.jpg" alt="Sample product 1" class="w-full h-24 object-cover rounded" loading="lazy" />
-              <div class="mt-2 text-sm">Handmade Juniper Soap</div>
-              <div class="text-xs text-gray-500">From local artisans</div>
-            </div>
-            <div class="border rounded p-2 text-center">
-              <img src="pic3.jpg" alt="Sample product 2" class="w-full h-24 object-cover rounded" loading="lazy" />
-              <div class="mt-2 text-sm">Estonian Honey & Jam</div>
-              <div class="text-xs text-gray-500">Small-batch flavors</div>
-            </div>
-          </div>
+<section id="shop" class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-10">
+  <div class="bg-white rounded-xl shadow-lg p-6">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-heading">Authentic Estonian Products</h2>
+        <p class="mt-2 text-gray-600">Bring a piece of Estonia home — handcrafted items, local food specialties, and curated souvenirs.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="https://your-shopify-store.myshopify.com" target="_blank" rel="noopener" class="inline-block bg-tsaccent text-white px-4 py-2 rounded-md font-medium">Visit Our Shopify Store</a>
+          <a href="mailto:info@tallinnsightseeing.com?subject=Shop%20Inquiry" class="inline-block border px-4 py-2 rounded-md">Contact about products</a>
         </div>
       </div>
-    </section>
 
-    <!-- ===== About Section ===== -->
-    <section id="about" class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-10">
-      <div class="bg-white rounded-xl shadow-lg p-6 grid gap-6 md:grid-cols-3 items-center">
-        <div class="md:col-span-1">
-          <img src="Evelin.jpg"
-            class="w-full h-80 object-contain rounded-lg shadow bg-white p-2" />
+      <div class="grid grid-cols-2 gap-4 w-full md:w-96">
+        <div class="border rounded p-2 text-center">
+          <img src="pic2.jpg" alt="Sample product 1" class="w-full h-24 object-cover rounded" loading="lazy" />
+          <div class="mt-2 text-sm">Handmade Juniper Soap</div>
+          <div class="text-xs text-gray-500">From local artisans</div>
         </div>
-        <div class="md:col-span-2">
-          <h2 class="text-2xl font-heading">About Tallinn Sightseeing</h2>
-          <p class="mt-3 text-gray-700">Tallinn Sightseeing is a locally owned travel company offering authentic, high-quality guided tours in Estonia and across the Baltics. We focus on genuine culture and local experiences — helping visitors discover the real Estonia, Latvia, and Lithuania beyond the usual tourist routes.</p>
 
-          <h3 class="mt-4 font-medium">Our Team</h3>
-          <p class="mt-2 text-gray-700">Our guides are professional, friendly, and deeply knowledgeable about history, nature, and local traditions. Each guide brings unique expertise — from culture and architecture to wildlife and gastronomy — ensuring every guest enjoys a personal and engaging experience.</p>
-
-          <h3 class="mt-4 font-medium">Evelin Kass — Founder & Head Guide</h3>
-          <p class="mt-2 text-gray-700">Evelin has more than 20 years of experience in organizing tours. Her passion for Estonia’s culture and natural heritage inspired the company’s strong local focus. While Evelin is the face of the company, she leads a talented team of guides who bring the tours to life and provide the local insights guests remember.</p>
-
-          <div class="mt-4">
-            <a href="#contact" class="inline-block bg-tsgreen text-white px-4 py-2 rounded-md">Contact our team</a>
-            <a href="mailto:info@tallinnsightseeing.com" class="inline-block ml-3 border px-4 py-2 rounded-md">Book Now</a>
-          </div>
+        <div class="border rounded p-2 text-center">
+          <img src="pic3.jpg" alt="Sample product 2" class="w-full h-24 object-cover rounded" loading="lazy" />
+          <div class="mt-2 text-sm">Estonian Honey & Jam</div>
+          <div class="text-xs text-gray-500">Small-batch flavors</div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== Contact / Footer ===== -->
-    <footer id="contact" class="mt-12 bg-white border-t">
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 grid gap-6 md:grid-cols-3">
-        <!-- Contact details -->
-        <div>
-          <h4 class="font-heading text-lg">Contact</h4>
-          <p class="mt-2 text-gray-700">Email: <a href="mailto:info@tallinnsightseeing.com" class="text-tsblue">info@tallinnsightseeing.com</a></p>
-          <p class="mt-1 text-gray-700">Phone: <a href="tel:+3725647229" class="text-tsblue">+372 5647229</a></p>
-              <div>
-      <h4 class="font-heading text-lg">Tours offered in the Following Languages</h4>
+<!-- ============================================== -->
+<!--                    ABOUT                       -->
+<!-- ============================================== -->
+
+<section id="about" class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-10">
+  <div class="bg-white rounded-xl shadow-lg p-6 grid gap-6 md:grid-cols-3 items-center">
+
+    <div class="md:col-span-1">
+      <img src="Evelin.jpg"
+        class="w-full h-96 object-contain rounded-lg shadow bg-white p-2" />
+    </div>
+
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-heading">About Tallinn Sightseeing</h2>
+      <p class="mt-3 text-gray-700">Tallinn Sightseeing is a locally owned travel company offering authentic, high-quality guided tours in Estonia and across the Baltics. We focus on genuine culture and local experiences — helping visitors discover the real Estonia, Latvia, and Lithuania beyond the usual tourist routes.</p>
+
+      <h3 class="mt-4 font-medium">Our Team</h3>
+      <p class="mt-2 text-gray-700">Our guides are professional, friendly, and deeply knowledgeable about history, nature, and local traditions. Each guide brings unique expertise — from culture and architecture to wildlife and gastronomy — ensuring every guest enjoys a personal and engaging experience.</p>
+
+      <h3 class="mt-4 font-medium">Evelin Kass — Founder & Head Guide</h3>
+      <p class="mt-2 text-gray-700">Evelin has more than 20 years of experience in organizing tours. Her passion for Estonia’s culture and natural heritage inspired the company’s strong local focus. While Evelin is the face of the company, she leads a talented team of guides who bring the tours to life and provide the local insights guests remember.</p>
+
+      <div class="mt-4">
+        <a href="#contact" class="inline-block bg-tsgreen text-white px-4 py-2 rounded-md">Contact our team</a>
+        <a href="mailto:info@tallinnsightseeing.com" class="inline-block ml-3 border px-4 py-2 rounded-md">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!--                    FOOTER                      -->
+<!-- ============================================== -->
+
+<footer id="contact" class="mt-12 bg-white border-t">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 grid gap-6 md:grid-cols-3">
+
+    <div>
+      <h4 class="font-heading text-lg">Contact</h4>
+      <p class="mt-2 text-gray-700">Email: <a href="mailto:info@tallinnsightseeing.com" class="text-tsblue">info@tallinnsightseeing.com</a></p>
+      <p class="mt-1 text-gray-700">Phone: <a href="tel:+3725647229" class="text-tsblue">+372 5647229</a></p>
+
+      <h4 class="font-heading text-lg mt-4">Tours offered in the Following Languages</h4>
       <ul class="mt-2 flex justify-center md:justify-start gap-3 flex-wrap">
         <li><img src="https://flagcdn.com/gb.svg" alt="UK flag" class="flag" /> English</li>
         <li><img src="https://flagcdn.com/se.svg" alt="Swedish flag" class="flag" /> Swedish</li>
@@ -282,47 +307,50 @@
         <li><img src="https://flagcdn.com/ee.svg" alt="Estonian flag" class="flag" /> Estonian</li>
       </ul>
     </div>
-        </div>
 
-        <!-- Small contact form (non-functional placeholder) -->
-        <div>
-          <h4 class="font-heading text-lg">Send a quick message</h4>
-          <!-- NOTE: This is a simple mailto fallback form. For production, wire a server-side form or use a service. -->
-          <form action="mailto:info@tallinnsightseeing.com" method="get" enctype="text/plain" class="mt-2 space-y-2">
-            <input type="text" name="name" placeholder="Your name" class="w-full border rounded px-3 py-2 text-sm" />
-            <input type="email" name="email" placeholder="Your email" class="w-full border rounded px-3 py-2 text-sm" />
-            <textarea name="message" rows="3" placeholder="Message" class="w-full border rounded px-3 py-2 text-sm"></textarea>
-            <div>
-              <button type="submit" class="bg-tsblue text-white px-4 py-2 rounded">Send Email</button>
-            </div>
-          </form>
-        </div>
+    <div>
+      <h4 class="font-heading text-lg">Send a quick message</h4>
+      <form action="mailto:info@tallinnsightseeing.com" method="get" enctype="text/plain" class="mt-2 space-y-2">
+        <input type="text" name="name" placeholder="Your name" class="w-full border rounded px-3 py-2 text-sm" />
+        <input type="email" name="email" placeholder="Your email" class="w-full border rounded px-3 py-2 text-sm" />
+        <textarea name="message" rows="3" placeholder="Message" class="w-full border rounded px-3 py-2 text-sm"></textarea>
+        <button type="submit" class="bg-tsblue text-white px-4 py-2 rounded">Send Email</button>
+      </form>
+    </div>
 
-        <!-- Socials / small info -->
-        <div>
-          <h4 class="font-heading text-lg">About</h4>
-          <p class="mt-2 text-gray-700">© <span id="yr"></span> Tallinn Sightseeing — Authentic local experiences in Estonia</p>
-          <div class="mt-4 flex gap-3">
-            <a href="#" class="text-sm">Facebook</a>
-            <a href="#" class="text-sm">Instagram</a>
-            <a href="#" class="text-sm">TripAdvisor</a>
-          </div>
-        </div>
+    <div>
+      <h4 class="font-heading text-lg">About</h4>
+      <p class="mt-2 text-gray-700">© <span id="yr"></span> Tallinn Sightseeing — Authentic local experiences in Estonia</p>
+
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="text-sm">Facebook</a>
+        <a href="#" class="text-sm">Instagram</a>
+        <a href="#" class="text-sm">TripAdvisor</a>
       </div>
-    </footer>
-  </main>
+    </div>
+  </div>
+</footer>
 
-  <!-- ===== Scripts ===== -->
-  <script>
-    // Mobile menu toggle
-    const menuBtn = 
+<!-- ============================================== -->
+<!--                   SCRIPTS                      -->
+<!-- ============================================== -->
 
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const iconOpen = document.getElementById("icon-open");
+  const iconClose = document.getElementById("icon-close");
 
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    iconOpen.classList.toggle("hidden");
+    iconClose.classList.toggle("hidden");
+  });
 
+  // Auto year in footer
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
 
-
-
-
-
-
-
+</body>
+</html>
