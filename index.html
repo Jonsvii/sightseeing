@@ -86,16 +86,19 @@
 
   <!-- Mobile menu -->
   <nav id="mobile-menu"
-       class="md:hidden hidden flex-col bg-white shadow-lg text-lg space-y-4 p-6">
-    <a href="#home">Home</a>
-    <a href="#tours">Tours</a>
-    <a href="#shop">Online Shop</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="mailto:info@tallinnsightseeing.com"
-       class="bg-tsblue text-white px-4 py-2 rounded-md text-center">
-      Book Now
-    </a>
+     class="md:hidden hidden flex-col bg-white shadow-lg 
+            text-lg space-y-4 p-6">
+
+  <a href="#home" class="py-3 px-2 border-b border-gray-200 text-xl">Home</a>
+  <a href="#tours" class="py-3 px-2 border-b border-gray-200 text-xl">Tours</a>
+  <a href="#shop" class="py-3 px-2 border-b border-gray-200 text-xl">Online Shop</a>
+  <a href="#about" class="py-3 px-2 border-b border-gray-200 text-xl">About</a>
+  <a href="#contact" class="py-3 px-2 text-xl">Contact</a>
+
+  <a href="mailto:info@tallinnsightseeing.com"
+     class="mt-4 bg-tsblue text-white px-5 py-3 rounded font-semibold text-center text-xl">
+    Book Now
+  </a>
   </nav>
 </header>
 
@@ -103,12 +106,12 @@
 <!--                     HERO                       -->
 <!-- ============================================== -->
 
-<section id="home" class="relative">
+<section id="home" class="relative w-full">
 
   <!-- Optimized hero image -->
   <img src="pic1.jpg"
        alt="Tallinn scenic view"
-       class="w-full h-[75vh] object-cover"
+       class="w-full h-[80vh] sm:h-[75vh] object-cover"
        loading="eager"
        sizes="100vw" />
 
@@ -134,21 +137,23 @@
     </p>
 
     <!-- Buttons -->
-    <div class="mt-4 flex justify-center gap-4">
+    <div class="mt-4 flex flex-col sm:flex-row justify-center gap-4">
       <a href="#tours"
-         class="bg-white text-tsblue px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100">
+         class="bg-white text-tsblue px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100 text-center">
         Explore Tours
       </a>
 
       <a href="mailto:info@tallinnsightseeing.com"
-         class="border border-white text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-white hover:text-tsblue transition">
+         class="border border-white text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-white hover:text-tsblue transition text-center">
         Book Now
       </a>
     </div>
 
+    <!-- Contact info näkyviin mobiilissa -->
     <div class="mt-2 text-white text-lg">
       ✉️ info@tallinnsightseeing.com &nbsp; | &nbsp; ☎️ +372 5647229
     </div>
+
   </div>
 </section>
 
